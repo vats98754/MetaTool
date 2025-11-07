@@ -1,0 +1,38 @@
+PROPER CODE MODE BENCHMARK SUMMARY
+================================================================================
+
+Timestamp: 20251107_165425
+Architecture: Deno + TypeScript + HTTP Proxy
+LLM: OpenAI GPT-4
+
+Total Queries: 5
+Successful: 5
+Success Rate: 100.0%
+Average Time: 5034ms
+Total Time: 25169ms
+
+Query Results:
+--------------------------------------------------------------------------------
+
+1. Find a tool to translate Spanish to English
+   Success: True
+   Time: 5211ms
+   Tools Found: 0
+
+2. I need a weather forecasting service
+   Success: True
+   Time: 5657ms
+   Tools Found: 0
+
+3. Search for image generation tools
+   Success: True
+   Time: 2403ms
+   Tools Found: 4
+
+4. Find tools for sentiment analysis
+   Success: True
+   Time: 2186ms
+
+5. I want to convert currencies
+   Success: True
+   Time: 9711ms

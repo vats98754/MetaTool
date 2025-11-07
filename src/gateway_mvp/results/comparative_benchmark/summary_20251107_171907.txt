@@ -1,0 +1,52 @@
+COMPARATIVE BENCHMARK: Traditional vs Code Mode
+================================================================================
+
+Timestamp: 20251107_171907
+Total Queries: 5
+Tool Database Size: 100 tools
+
+TRADITIONAL TOOL CALLING:
+  Average Tokens: 15810
+  Average Latency: 11680ms
+  Success Rate: 100.0%
+  Average LLM Calls: 1.8
+
+CODE MODE:
+  Average Tokens: 697
+  Average Latency: 5723ms
+  Success Rate: 100.0%
+  Average LLM Calls: 1.0
+
+IMPROVEMENTS:
+  Token Reduction: +95.6%
+  Latency Change: +51.0%
+  LLM Call Reduction: +0.8
+
+
+PER-QUERY BREAKDOWN:
+--------------------------------------------------------------------------------
+
+1. Find a tool to translate Spanish to English
+   Traditional: 15612 tokens, 10320ms, 2 LLM calls
+   Code Mode:   750 tokens, 7055ms, 1 LLM calls
+   Improvement: +95.2% tokens
+
+2. I need a weather forecasting service
+   Traditional: 14856 tokens, 9638ms, 2 LLM calls
+   Code Mode:   727 tokens, 7004ms, 1 LLM calls
+   Improvement: +95.1% tokens
+
+3. Search for image generation tools
+   Traditional: 17734 tokens, 9663ms, 2 LLM calls
+   Code Mode:   600 tokens, 3563ms, 1 LLM calls
+   Improvement: +96.6% tokens
+
+4. Find tools for sentiment analysis
+   Traditional: 16228 tokens, 25330ms, 2 LLM calls
+   Code Mode:   604 tokens, 2582ms, 1 LLM calls
+   Improvement: +96.3% tokens
+
+5. I want to convert currencies
+   Traditional: 14621 tokens, 3448ms, 1 LLM calls
+   Code Mode:   804 tokens, 8410ms, 1 LLM calls
+   Improvement: +94.5% tokens

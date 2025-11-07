@@ -1,0 +1,17 @@
+2025-11-07 17:07:42,697 [INFO] Loading MetaTool database from: /Users/anvayvats/modas/MetaTool/dataset/plugin_info.json
+
+================================================================================
+COMPARATIVE BENCHMARK: Traditional vs Code Mode
+================================================================================
+
+→ Loading MetaTool database...
+Traceback (most recent call last):
+  File "/Users/anvayvats/modas/MetaTool/src/gateway_mvp/benchmark_comparative.py", line 640, in <module>
+    run_comparative_benchmark()
+  File "/Users/anvayvats/modas/MetaTool/src/gateway_mvp/benchmark_comparative.py", line 406, in run_comparative_benchmark
+    tool_db = load_metatool_database(use_large_dataset=True)  # Use 390 tools
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anvayvats/modas/MetaTool/src/gateway_mvp/benchmark_comparative.py", line 364, in load_metatool_database
+    for tool_id, tool_info in tools_data.items():
+                              ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'

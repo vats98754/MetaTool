@@ -1,0 +1,237 @@
+2025-11-07 17:17:29,765 [INFO] Loading MetaTool database from: /Users/anvayvats/modas/MetaTool/dataset/plugin_info.json
+2025-11-07 17:17:29,766 [INFO] ✓ Loaded 100 tools (limited from 390 available)
+2025-11-07 17:17:29,834 [INFO] MetaTool proxy started on http://localhost:3002
+2025-11-07 17:17:30,003 [INFO] Deno runtime detected
+2025-11-07 17:17:30,003 [INFO] [TRADITIONAL] Processing: Find a tool to translate Spanish to English
+2025-11-07 17:17:30,003 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:17:35,046 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:17:35,070 [INFO] [TRADITIONAL] LLM Call 1: 14554 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:17:35,070 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'Translate Spanish to English'})
+2025-11-07 17:17:40,305 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:17:40,323 [INFO] [TRADITIONAL] LLM Call 2: 836 prompt tokens
+2025-11-07 17:17:40,323 [INFO] [TRADITIONAL] Final response: It appears there may have been a mix-up in the tools provided, as none of the results specifically m...
+2025-11-07 17:17:41,328 [INFO] [CODE MODE] Processing: Find a tool to translate Spanish to English
+2025-11-07 17:17:48,161 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:17:48,186 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:17:48,369 [INFO] [PROXY] Search request: query='Spanish to English translation', limit=1
+2025-11-07 17:17:48,370 [INFO] [PROXY] Search found 1 results
+2025-11-07 17:17:48,383 [INFO] ✓ Execution successful (200ms)
+2025-11-07 17:17:49,386 [INFO] [TRADITIONAL] Processing: I need a weather forecasting service
+2025-11-07 17:17:49,387 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:17:53,831 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:17:53,842 [INFO] [TRADITIONAL] LLM Call 1: 14552 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:17:53,843 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'weather forecasting'})
+2025-11-07 17:17:59,009 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:17:59,024 [INFO] [TRADITIONAL] LLM Call 2: 121 prompt tokens
+2025-11-07 17:17:59,024 [INFO] [TRADITIONAL] Final response: I found a service that might meet your needs for weather forecasting:
+
+- **LsongAI**: Lsong's AI pro...
+2025-11-07 17:18:00,030 [INFO] [CODE MODE] Processing: I need a weather forecasting service
+2025-11-07 17:18:06,768 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:06,791 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:18:07,021 [INFO] [PROXY] Search request: query='weather forecasting', limit=1
+2025-11-07 17:18:07,022 [INFO] [PROXY] Search found 1 results
+2025-11-07 17:18:07,034 [INFO] ✓ Execution successful (245ms)
+2025-11-07 17:18:08,039 [INFO] [TRADITIONAL] Processing: Search for image generation tools
+2025-11-07 17:18:08,041 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:18:10,612 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:10,652 [INFO] [TRADITIONAL] LLM Call 1: 14551 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:18:10,653 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'image generation', 'limit': 5})
+2025-11-07 17:18:17,694 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:17,701 [INFO] [TRADITIONAL] LLM Call 2: 2896 prompt tokens
+2025-11-07 17:18:17,702 [INFO] [TRADITIONAL] Final response: Here are some tools related to image generation:
+
+1. **Diagrams**: This plugin can be used to create...
+2025-11-07 17:18:18,706 [INFO] [CODE MODE] Processing: Search for image generation tools
+2025-11-07 17:18:22,018 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:22,025 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:18:22,260 [INFO] [PROXY] Search request: query='image generation tools', limit=5
+2025-11-07 17:18:22,260 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:18:22,270 [INFO] ✓ Execution successful (247ms)
+2025-11-07 17:18:23,275 [INFO] [TRADITIONAL] Processing: Find tools for sentiment analysis
+2025-11-07 17:18:23,276 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:18:27,651 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:27,662 [INFO] [TRADITIONAL] LLM Call 1: 14551 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:18:27,662 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'sentiment analysis'})
+2025-11-07 17:18:48,589 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:48,605 [INFO] [TRADITIONAL] LLM Call 2: 1195 prompt tokens
+2025-11-07 17:18:48,605 [INFO] [TRADITIONAL] Final response: The search for tools related to "sentiment analysis" provided a variety of results; however, it seem...
+2025-11-07 17:18:49,611 [INFO] [CODE MODE] Processing: Find tools for sentiment analysis
+2025-11-07 17:18:51,925 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:51,949 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:18:52,184 [INFO] [PROXY] Search request: query='sentiment analysis', limit=5
+2025-11-07 17:18:52,185 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:18:52,193 [INFO] ✓ Execution successful (245ms)
+2025-11-07 17:18:53,198 [INFO] [TRADITIONAL] Processing: I want to convert currencies
+2025-11-07 17:18:53,200 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:18:56,634 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:18:56,646 [INFO] [TRADITIONAL] LLM Call 1: 14551 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:18:57,651 [INFO] [CODE MODE] Processing: I want to convert currencies
+2025-11-07 17:19:05,811 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:19:05,814 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:19:06,044 [INFO] [PROXY] Search request: query='currency converter', limit=5
+2025-11-07 17:19:06,045 [INFO] [PROXY] Search found 1 results
+2025-11-07 17:19:06,062 [INFO] ✓ Execution successful (248ms)
+2025-11-07 17:19:07,559 [INFO] MetaTool proxy stopped
+
+================================================================================
+COMPARATIVE BENCHMARK: Traditional vs Code Mode
+================================================================================
+
+→ Loading MetaTool database...
+
+→ Initializing Traditional Tool Caller...
+✓ Traditional approach ready
+  → Sending 101 function schemas to LLM
+  → Schema size: 84,093 characters (~21,023 tokens)
+
+→ Initializing Code Mode...
+✓ Code Mode ready
+
+================================================================================
+RUNNING 5 QUERIES WITH BOTH APPROACHES
+================================================================================
+
+
+================================================================================
+Query 1/5: Find a tool to translate Spanish to English
+================================================================================
+
+→ Running Traditional Tool Calling...
+  ✓ Success: True
+  ✓ Latency: 10320ms
+  ✓ Tokens: 15612 (prompt: 15390, completion: 222)
+  ✓ LLM calls: 2
+  ✓ Tools found: 5
+
+→ Running Code Mode...
+  ✓ Success: True
+  ✓ Latency: 7055ms
+  ✓ Tokens: 750 (prompt: 529, completion: 221)
+  ✓ LLM calls: 1
+  ✓ Tools found: 0
+
+📊 COMPARISON:
+  Token reduction: +95.2%
+  Latency difference: -3265ms
+
+
+================================================================================
+Query 2/5: I need a weather forecasting service
+================================================================================
+
+→ Running Traditional Tool Calling...
+  ✓ Success: True
+  ✓ Latency: 9638ms
+  ✓ Tokens: 14856 (prompt: 14673, completion: 183)
+  ✓ LLM calls: 2
+  ✓ Tools found: 1
+
+→ Running Code Mode...
+  ✓ Success: True
+  ✓ Latency: 7004ms
+  ✓ Tokens: 727 (prompt: 527, completion: 200)
+  ✓ LLM calls: 1
+  ✓ Tools found: 0
+
+📊 COMPARISON:
+  Token reduction: +95.1%
+  Latency difference: -2634ms
+
+
+================================================================================
+Query 3/5: Search for image generation tools
+================================================================================
+
+→ Running Traditional Tool Calling...
+  ✓ Success: True
+  ✓ Latency: 9663ms
+  ✓ Tokens: 17734 (prompt: 17447, completion: 287)
+  ✓ LLM calls: 2
+  ✓ Tools found: 5
+
+→ Running Code Mode...
+  ✓ Success: True
+  ✓ Latency: 3563ms
+  ✓ Tokens: 600 (prompt: 526, completion: 74)
+  ✓ LLM calls: 1
+  ✓ Tools found: 0
+
+📊 COMPARISON:
+  Token reduction: +96.6%
+  Latency difference: -6099ms
+
+
+================================================================================
+Query 4/5: Find tools for sentiment analysis
+================================================================================
+
+→ Running Traditional Tool Calling...
+  ✓ Success: True
+  ✓ Latency: 25330ms
+  ✓ Tokens: 16228 (prompt: 15746, completion: 482)
+  ✓ LLM calls: 2
+  ✓ Tools found: 5
+
+→ Running Code Mode...
+  ✓ Success: True
+  ✓ Latency: 2582ms
+  ✓ Tokens: 604 (prompt: 526, completion: 78)
+  ✓ LLM calls: 1
+  ✓ Tools found: 0
+
+📊 COMPARISON:
+  Token reduction: +96.3%
+  Latency difference: -22748ms
+
+
+================================================================================
+Query 5/5: I want to convert currencies
+================================================================================
+
+→ Running Traditional Tool Calling...
+  ✓ Success: True
+  ✓ Latency: 3448ms
+  ✓ Tokens: 14621 (prompt: 14551, completion: 70)
+  ✓ LLM calls: 1
+  ✓ Tools found: 0
+
+→ Running Code Mode...
+  ✓ Success: True
+  ✓ Latency: 8410ms
+  ✓ Tokens: 804 (prompt: 526, completion: 278)
+  ✓ LLM calls: 1
+  ✓ Tools found: 0
+
+📊 COMPARISON:
+  Token reduction: +94.5%
+  Latency difference: +4963ms
+
+
+================================================================================
+COMPREHENSIVE RESULTS
+================================================================================
+
+TRADITIONAL TOOL CALLING:
+  Average Tokens: 15810
+  Average Latency: 11680ms
+  Success Rate: 100.0%
+  Average LLM Calls: 1.8
+
+CODE MODE:
+  Average Tokens: 697
+  Average Latency: 5723ms
+  Success Rate: 100.0%
+  Average LLM Calls: 1.0
+
+IMPROVEMENTS:
+  Token Reduction: +95.6%
+  Latency Change: +51.0%
+  LLM Call Reduction: +0.8
+
+✓ Detailed results: /Users/anvayvats/modas/MetaTool/src/gateway_mvp/results/comparative_benchmark/results_20251107_171907.json
+✓ Summary report: /Users/anvayvats/modas/MetaTool/src/gateway_mvp/results/comparative_benchmark/summary_20251107_171907.txt
+
+================================================================================
+BENCHMARK COMPLETE
+================================================================================

@@ -1,0 +1,383 @@
+2025-11-07 17:25:03,341 [INFO] 
+################################################################################
+2025-11-07 17:25:03,341 [INFO] FULL MetaTool EVALUATION BENCHMARK
+2025-11-07 17:25:03,341 [INFO] ################################################################################
+2025-11-07 17:25:03,341 [INFO] Number of tools: 100
+2025-11-07 17:25:03,341 [INFO] Sample size per task: 2
+2025-11-07 17:25:03,342 [INFO] ################################################################################
+
+2025-11-07 17:25:03,342 [INFO] Loading MetaTool database...
+2025-11-07 17:25:03,342 [INFO] Loading MetaTool database from: /Users/anvayvats/modas/MetaTool/dataset/plugin_info.json
+2025-11-07 17:25:03,343 [INFO] ✓ Loaded 100 tools (limited from 390 available)
+2025-11-07 17:25:03,343 [INFO] Loaded 100 tools
+2025-11-07 17:25:03,343 [INFO] Initializing Traditional and Code Mode callers...
+2025-11-07 17:25:03,411 [INFO] MetaTool proxy started on http://localhost:3002
+2025-11-07 17:25:03,576 [INFO] Deno runtime detected
+2025-11-07 17:25:03,576 [INFO] 
+================================================================================
+2025-11-07 17:25:03,576 [INFO] BENCHMARKING TASK: Task1 (Binary Classification)
+2025-11-07 17:25:03,576 [INFO] ================================================================================
+
+2025-11-07 17:25:03,585 [INFO] Loaded 1040 queries from Task1.json
+2025-11-07 17:25:03,586 [INFO] Sampling 2 queries from 1040 total
+2025-11-07 17:25:03,586 [INFO] 
+[1/2] Query: Can you check if there any trending discussions related to the Sakura festival occurring in Japan on...
+2025-11-07 17:25:03,586 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:25:03,586 [INFO] [TRADITIONAL] Processing: Can you check if there any trending discussions related to the Sakura festival occurring in Japan on Google Trends or Twitter?
+2025-11-07 17:25:03,586 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:25:07,607 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:07,627 [INFO] [TRADITIONAL] LLM Call 1: 14568 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:25:07,627 [INFO] [TRADITIONAL] LLM called: use_now({'action': 'execute'})
+2025-11-07 17:25:07,627 [INFO]   ✓ Traditional: 14582 tokens, 4041ms, 1 LLM calls
+2025-11-07 17:25:07,627 [INFO]   Running CODE MODE approach...
+2025-11-07 17:25:07,627 [INFO] [CODE MODE] Processing: Can you check if there any trending discussions related to the Sakura festival occurring in Japan on Google Trends or Twitter?
+2025-11-07 17:25:13,041 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:13,054 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:25:13,197 [INFO] [PROXY] Search request: query='Sakura festival Japan', limit=10
+2025-11-07 17:25:13,198 [INFO] [PROXY] Search found 3 results
+2025-11-07 17:25:13,208 [INFO] ✓ Execution successful (158ms)
+2025-11-07 17:25:13,208 [INFO]   ✓ Code Mode: 759 tokens, 5581ms, 1 LLM calls
+2025-11-07 17:25:13,208 [INFO]   📊 Token reduction so far: 94.8%
+2025-11-07 17:25:13,208 [INFO] 
+[2/2] Query: What would a homeless person need if they already have a fire to stand next to?...
+2025-11-07 17:25:13,208 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:25:13,208 [INFO] [TRADITIONAL] Processing: What would a homeless person need if they already have a fire to stand next to?
+2025-11-07 17:25:13,209 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:25:23,075 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:23,089 [INFO] [TRADITIONAL] LLM Call 1: 14563 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:25:23,089 [INFO]   ✓ Traditional: 14834 tokens, 9881ms, 1 LLM calls
+2025-11-07 17:25:23,089 [INFO]   Running CODE MODE approach...
+2025-11-07 17:25:23,089 [INFO] [CODE MODE] Processing: What would a homeless person need if they already have a fire to stand next to?
+2025-11-07 17:25:26,592 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:26,619 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:25:26,848 [INFO] [PROXY] Search request: query='homeless person needs', limit=5
+2025-11-07 17:25:26,848 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:25:26,856 [INFO] ✓ Execution successful (239ms)
+2025-11-07 17:25:26,856 [INFO]   ✓ Code Mode: 635 tokens, 3767ms, 1 LLM calls
+2025-11-07 17:25:26,856 [INFO]   📊 Token reduction so far: 95.3%
+2025-11-07 17:25:26,856 [INFO] 
+================================================================================
+2025-11-07 17:25:26,856 [INFO] TASK SUMMARY: Task1 (Binary Classification)
+2025-11-07 17:25:26,856 [INFO] ================================================================================
+2025-11-07 17:25:26,856 [INFO] Queries processed: 2/2
+2025-11-07 17:25:26,856 [INFO] 
+Traditional Approach:
+2025-11-07 17:25:26,856 [INFO]   Tokens: 29,416 (prompt: 29,131, completion: 285)
+2025-11-07 17:25:26,856 [INFO]   Time: 13922ms (avg: 6961ms/query)
+2025-11-07 17:25:26,856 [INFO]   LLM calls: 2
+2025-11-07 17:25:26,857 [INFO]   Cost: $0.2999
+2025-11-07 17:25:26,857 [INFO] 
+Code Mode Approach:
+2025-11-07 17:25:26,857 [INFO]   Tokens: 1,394 (prompt: 1,079, completion: 315)
+2025-11-07 17:25:26,857 [INFO]   Time: 9348ms (avg: 4674ms/query)
+2025-11-07 17:25:26,857 [INFO]   LLM calls: 2
+2025-11-07 17:25:26,857 [INFO]   Cost: $0.0202
+2025-11-07 17:25:26,857 [INFO] 
+🎯 IMPROVEMENTS:
+2025-11-07 17:25:26,857 [INFO]   Token reduction: 95.3%
+2025-11-07 17:25:26,857 [INFO]   Time reduction: 32.9%
+2025-11-07 17:25:26,857 [INFO]   LLM call reduction: 0.0%
+2025-11-07 17:25:26,857 [INFO]   Cost savings: 93.3% ($0.2796)
+2025-11-07 17:25:26,857 [INFO] ================================================================================
+
+2025-11-07 17:25:26,857 [INFO] 
+================================================================================
+2025-11-07 17:25:26,857 [INFO] BENCHMARKING TASK: Task2-Subtask1 (Single Tool Selection)
+2025-11-07 17:25:26,857 [INFO] ================================================================================
+
+2025-11-07 17:25:26,871 [INFO] Loaded 995 queries from Task2-Subtask1.json
+2025-11-07 17:25:26,871 [INFO] Sampling 2 queries from 995 total
+2025-11-07 17:25:26,872 [INFO] 
+[1/2] Query: How can I make this experience as immersive as possible?...
+2025-11-07 17:25:26,872 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:25:26,872 [INFO] [TRADITIONAL] Processing: How can I make this experience as immersive as possible?
+2025-11-07 17:25:26,872 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:25:41,446 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:41,447 [INFO] [TRADITIONAL] LLM Call 1: 14557 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:25:41,448 [INFO]   ✓ Traditional: 15005 tokens, 14576ms, 1 LLM calls
+2025-11-07 17:25:41,448 [INFO]   Running CODE MODE approach...
+2025-11-07 17:25:41,448 [INFO] [CODE MODE] Processing: How can I make this experience as immersive as possible?
+2025-11-07 17:25:49,808 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:49,830 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:25:50,048 [INFO] [PROXY] Search request: query='immersive experience', limit=5
+2025-11-07 17:25:50,049 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:25:50,061 [INFO] ✓ Execution successful (231ms)
+2025-11-07 17:25:50,061 [INFO]   ✓ Code Mode: 848 tokens, 8613ms, 1 LLM calls
+2025-11-07 17:25:50,061 [INFO]   📊 Token reduction so far: 94.3%
+2025-11-07 17:25:50,061 [INFO] 
+[2/2] Query: Could you guide me through the events of the women's suffrage movement in the 19th century?...
+2025-11-07 17:25:50,061 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:25:50,061 [INFO] [TRADITIONAL] Processing: Could you guide me through the events of the women's suffrage movement in the 19th century?
+2025-11-07 17:25:50,061 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:25:52,592 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:52,608 [INFO] [TRADITIONAL] LLM Call 1: 14567 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:25:52,608 [INFO] [TRADITIONAL] LLM called: use_timeport({'action': 'execute'})
+2025-11-07 17:25:52,608 [INFO]   ✓ Traditional: 14582 tokens, 2547ms, 1 LLM calls
+2025-11-07 17:25:52,608 [INFO]   Running CODE MODE approach...
+2025-11-07 17:25:52,608 [INFO] [CODE MODE] Processing: Could you guide me through the events of the women's suffrage movement in the 19th century?
+2025-11-07 17:25:58,832 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:25:58,835 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:25:58,884 [INFO] [PROXY] Search request: query='women's suffrage movement in the 19th century', limit=10
+2025-11-07 17:25:58,885 [INFO] [PROXY] Search found 10 results
+2025-11-07 17:25:58,889 [INFO] ✓ Execution successful (55ms)
+2025-11-07 17:25:58,889 [INFO]   ✓ Code Mode: 663 tokens, 6280ms, 1 LLM calls
+2025-11-07 17:25:58,889 [INFO]   📊 Token reduction so far: 94.9%
+2025-11-07 17:25:58,889 [INFO] 
+================================================================================
+2025-11-07 17:25:58,889 [INFO] TASK SUMMARY: Task2-Subtask1 (Single Tool Selection)
+2025-11-07 17:25:58,889 [INFO] ================================================================================
+2025-11-07 17:25:58,889 [INFO] Queries processed: 2/2
+2025-11-07 17:25:58,889 [INFO] 
+Traditional Approach:
+2025-11-07 17:25:58,889 [INFO]   Tokens: 29,587 (prompt: 29,124, completion: 463)
+2025-11-07 17:25:58,889 [INFO]   Time: 17123ms (avg: 8562ms/query)
+2025-11-07 17:25:58,889 [INFO]   LLM calls: 2
+2025-11-07 17:25:58,889 [INFO]   Cost: $0.3051
+2025-11-07 17:25:58,889 [INFO] 
+Code Mode Approach:
+2025-11-07 17:25:58,889 [INFO]   Tokens: 1,511 (prompt: 1,072, completion: 439)
+2025-11-07 17:25:58,889 [INFO]   Time: 14894ms (avg: 7447ms/query)
+2025-11-07 17:25:58,889 [INFO]   LLM calls: 2
+2025-11-07 17:25:58,889 [INFO]   Cost: $0.0239
+2025-11-07 17:25:58,889 [INFO] 
+🎯 IMPROVEMENTS:
+2025-11-07 17:25:58,889 [INFO]   Token reduction: 94.9%
+2025-11-07 17:25:58,890 [INFO]   Time reduction: 13.0%
+2025-11-07 17:25:58,890 [INFO]   LLM call reduction: 0.0%
+2025-11-07 17:25:58,890 [INFO]   Cost savings: 92.2% ($0.2812)
+2025-11-07 17:25:58,890 [INFO] ================================================================================
+
+2025-11-07 17:25:58,890 [INFO] 
+================================================================================
+2025-11-07 17:25:58,890 [INFO] BENCHMARKING TASK: Task2-Subtask2 (Tool Selection with Categories)
+2025-11-07 17:25:58,890 [INFO] ================================================================================
+
+2025-11-07 17:25:58,941 [INFO] Loaded 1800 queries from Task2-Subtask2.json
+2025-11-07 17:25:58,941 [INFO] Sampling 2 queries from 1800 total
+2025-11-07 17:25:58,942 [INFO] 
+[1/2] Query: Yes, I can definitely assist you with that. Could you please specify whether you prefer a step-by-st...
+2025-11-07 17:25:58,942 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:25:58,942 [INFO] [TRADITIONAL] Processing: Yes, I can definitely assist you with that. Could you please specify whether you prefer a step-by-step explanation or would you like me to provide you with a sample code snippet as well?
+2025-11-07 17:25:58,942 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:26:01,897 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:01,899 [INFO] [TRADITIONAL] LLM Call 1: 14584 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:26:01,900 [INFO]   ✓ Traditional: 14612 tokens, 2957ms, 1 LLM calls
+2025-11-07 17:26:01,900 [INFO]   Running CODE MODE approach...
+2025-11-07 17:26:01,900 [INFO] [CODE MODE] Processing: Yes, I can definitely assist you with that. Could you please specify whether you prefer a step-by-step explanation or would you like me to provide you with a sample code snippet as well?
+2025-11-07 17:26:06,981 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:06,985 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:26:07,037 [INFO] [PROXY] Search request: query='tool_name', limit=10
+2025-11-07 17:26:07,037 [INFO] [PROXY] Search found 0 results
+2025-11-07 17:26:07,040 [INFO] ✓ Execution successful (57ms)
+2025-11-07 17:26:07,041 [INFO]   ✓ Code Mode: 726 tokens, 5141ms, 1 LLM calls
+2025-11-07 17:26:07,041 [INFO]   📊 Token reduction so far: 95.0%
+2025-11-07 17:26:07,041 [INFO] 
+[2/2] Query: I am interested in exploring the files, folders, branches, and commit history of this Bitbucket repo...
+2025-11-07 17:26:07,041 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:26:07,041 [INFO] [TRADITIONAL] Processing: I am interested in exploring the files, folders, branches, and commit history of this Bitbucket repository.
+2025-11-07 17:26:07,041 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:26:10,186 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:10,193 [INFO] [TRADITIONAL] LLM Call 1: 14567 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:26:10,193 [INFO] [TRADITIONAL] LLM called: use_repo_inspector({'action': 'get_info'})
+2025-11-07 17:26:10,194 [INFO]   ✓ Traditional: 14584 tokens, 3153ms, 1 LLM calls
+2025-11-07 17:26:10,194 [INFO]   Running CODE MODE approach...
+2025-11-07 17:26:10,195 [INFO] [CODE MODE] Processing: I am interested in exploring the files, folders, branches, and commit history of this Bitbucket repository.
+2025-11-07 17:26:24,011 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:24,016 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:26:24,196 [INFO] [PROXY] Search request: query='Bitbucket', limit=5
+2025-11-07 17:26:24,197 [INFO] [PROXY] Search found 0 results
+2025-11-07 17:26:24,205 [INFO] ✓ Execution successful (191ms)
+2025-11-07 17:26:24,206 [INFO]   ✓ Code Mode: 776 tokens, 14011ms, 1 LLM calls
+2025-11-07 17:26:24,206 [INFO]   📊 Token reduction so far: 94.9%
+2025-11-07 17:26:24,206 [INFO] 
+================================================================================
+2025-11-07 17:26:24,206 [INFO] TASK SUMMARY: Task2-Subtask2 (Tool Selection with Categories)
+2025-11-07 17:26:24,206 [INFO] ================================================================================
+2025-11-07 17:26:24,206 [INFO] Queries processed: 2/2
+2025-11-07 17:26:24,206 [INFO] 
+Traditional Approach:
+2025-11-07 17:26:24,206 [INFO]   Tokens: 29,196 (prompt: 29,151, completion: 45)
+2025-11-07 17:26:24,206 [INFO]   Time: 6110ms (avg: 3055ms/query)
+2025-11-07 17:26:24,206 [INFO]   LLM calls: 2
+2025-11-07 17:26:24,206 [INFO]   Cost: $0.2929
+2025-11-07 17:26:24,206 [INFO] 
+Code Mode Approach:
+2025-11-07 17:26:24,206 [INFO]   Tokens: 1,502 (prompt: 1,099, completion: 403)
+2025-11-07 17:26:24,206 [INFO]   Time: 19152ms (avg: 9576ms/query)
+2025-11-07 17:26:24,206 [INFO]   LLM calls: 2
+2025-11-07 17:26:24,206 [INFO]   Cost: $0.0231
+2025-11-07 17:26:24,206 [INFO] 
+🎯 IMPROVEMENTS:
+2025-11-07 17:26:24,206 [INFO]   Token reduction: 94.9%
+2025-11-07 17:26:24,206 [INFO]   Time reduction: -213.5%
+2025-11-07 17:26:24,206 [INFO]   LLM call reduction: 0.0%
+2025-11-07 17:26:24,206 [INFO]   Cost savings: 92.1% ($0.2698)
+2025-11-07 17:26:24,206 [INFO] ================================================================================
+
+2025-11-07 17:26:24,206 [INFO] 
+================================================================================
+2025-11-07 17:26:24,206 [INFO] BENCHMARKING TASK: Task2-Subtask3 (Multi-step Tool Selection)
+2025-11-07 17:26:24,206 [INFO] ================================================================================
+
+2025-11-07 17:26:24,220 [INFO] Loaded 995 queries from Task2-Subtask3.json
+2025-11-07 17:26:24,220 [INFO] Sampling 2 queries from 995 total
+2025-11-07 17:26:24,221 [INFO] 
+[1/2] Query: How can I make this experience as immersive as possible?...
+2025-11-07 17:26:24,221 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:26:24,221 [INFO] [TRADITIONAL] Processing: How can I make this experience as immersive as possible?
+2025-11-07 17:26:24,221 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:26:39,274 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:39,277 [INFO] [TRADITIONAL] LLM Call 1: 14557 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:26:39,277 [INFO]   ✓ Traditional: 15068 tokens, 15056ms, 1 LLM calls
+2025-11-07 17:26:39,277 [INFO]   Running CODE MODE approach...
+2025-11-07 17:26:39,277 [INFO] [CODE MODE] Processing: How can I make this experience as immersive as possible?
+2025-11-07 17:26:51,662 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:51,666 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:26:51,830 [INFO] [PROXY] Search request: query='immersive experience', limit=5
+2025-11-07 17:26:51,831 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:26:51,841 [INFO] ✓ Execution successful (177ms)
+2025-11-07 17:26:51,841 [INFO]   ✓ Code Mode: 725 tokens, 12564ms, 1 LLM calls
+2025-11-07 17:26:51,841 [INFO]   📊 Token reduction so far: 95.2%
+2025-11-07 17:26:51,841 [INFO] 
+[2/2] Query: Could you guide me through the events of the women's suffrage movement in the 19th century?...
+2025-11-07 17:26:51,841 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:26:51,841 [INFO] [TRADITIONAL] Processing: Could you guide me through the events of the women's suffrage movement in the 19th century?
+2025-11-07 17:26:51,841 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:26:54,734 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:54,737 [INFO] [TRADITIONAL] LLM Call 1: 14567 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:26:54,737 [INFO] [TRADITIONAL] LLM called: use_timeport({'action': 'execute'})
+2025-11-07 17:26:54,737 [INFO]   ✓ Traditional: 14582 tokens, 2896ms, 1 LLM calls
+2025-11-07 17:26:54,737 [INFO]   Running CODE MODE approach...
+2025-11-07 17:26:54,737 [INFO] [CODE MODE] Processing: Could you guide me through the events of the women's suffrage movement in the 19th century?
+2025-11-07 17:26:58,358 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:26:58,377 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:26:58,415 [INFO] [PROXY] Search request: query='women's suffrage movement in the 19th century', limit=10
+2025-11-07 17:26:58,416 [INFO] [PROXY] Search found 10 results
+2025-11-07 17:26:58,419 [INFO] ✓ Execution successful (43ms)
+2025-11-07 17:26:58,419 [INFO]   ✓ Code Mode: 663 tokens, 3682ms, 1 LLM calls
+2025-11-07 17:26:58,419 [INFO]   📊 Token reduction so far: 95.3%
+2025-11-07 17:26:58,420 [INFO] 
+================================================================================
+2025-11-07 17:26:58,420 [INFO] TASK SUMMARY: Task2-Subtask3 (Multi-step Tool Selection)
+2025-11-07 17:26:58,420 [INFO] ================================================================================
+2025-11-07 17:26:58,420 [INFO] Queries processed: 2/2
+2025-11-07 17:26:58,420 [INFO] 
+Traditional Approach:
+2025-11-07 17:26:58,420 [INFO]   Tokens: 29,650 (prompt: 29,124, completion: 526)
+2025-11-07 17:26:58,420 [INFO]   Time: 17952ms (avg: 8976ms/query)
+2025-11-07 17:26:58,420 [INFO]   LLM calls: 2
+2025-11-07 17:26:58,420 [INFO]   Cost: $0.3070
+2025-11-07 17:26:58,420 [INFO] 
+Code Mode Approach:
+2025-11-07 17:26:58,420 [INFO]   Tokens: 1,388 (prompt: 1,072, completion: 316)
+2025-11-07 17:26:58,420 [INFO]   Time: 16246ms (avg: 8123ms/query)
+2025-11-07 17:26:58,420 [INFO]   LLM calls: 2
+2025-11-07 17:26:58,420 [INFO]   Cost: $0.0202
+2025-11-07 17:26:58,420 [INFO] 
+🎯 IMPROVEMENTS:
+2025-11-07 17:26:58,420 [INFO]   Token reduction: 95.3%
+2025-11-07 17:26:58,420 [INFO]   Time reduction: 9.5%
+2025-11-07 17:26:58,420 [INFO]   LLM call reduction: 0.0%
+2025-11-07 17:26:58,420 [INFO]   Cost savings: 93.4% ($0.2868)
+2025-11-07 17:26:58,420 [INFO] ================================================================================
+
+2025-11-07 17:26:58,420 [INFO] 
+================================================================================
+2025-11-07 17:26:58,420 [INFO] BENCHMARKING TASK: Task2-Subtask4 (Complex Tool Reasoning)
+2025-11-07 17:26:58,420 [INFO] ================================================================================
+
+2025-11-07 17:26:58,425 [INFO] Loaded 497 queries from Task2-Subtask4.json
+2025-11-07 17:26:58,425 [INFO] Sampling 2 queries from 497 total
+2025-11-07 17:26:58,425 [INFO] 
+[1/2] Query: I want to know the latest news about Tesla and how it has impacted the stock market....
+2025-11-07 17:26:58,425 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:26:58,426 [INFO] [TRADITIONAL] Processing: I want to know the latest news about Tesla and how it has impacted the stock market.
+2025-11-07 17:26:58,426 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:27:00,366 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:27:00,368 [INFO] [TRADITIONAL] LLM Call 1: 14564 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:27:00,369 [INFO] [TRADITIONAL] LLM called: use_topnews({'action': 'get_info'})
+2025-11-07 17:27:00,369 [INFO]   ✓ Traditional: 14580 tokens, 1943ms, 1 LLM calls
+2025-11-07 17:27:00,369 [INFO]   Running CODE MODE approach...
+2025-11-07 17:27:00,369 [INFO] [CODE MODE] Processing: I want to know the latest news about Tesla and how it has impacted the stock market.
+2025-11-07 17:27:14,394 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:27:14,398 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:27:14,452 [INFO] [PROXY] Search request: query='Tesla news', limit=5
+2025-11-07 17:27:14,453 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:27:14,456 [INFO] ✓ Execution successful (59ms)
+2025-11-07 17:27:14,456 [INFO]   ✓ Code Mode: 823 tokens, 14087ms, 1 LLM calls
+2025-11-07 17:27:14,456 [INFO]   📊 Token reduction so far: 94.4%
+2025-11-07 17:27:14,456 [INFO] 
+[2/2] Query: Please provide me with the current stock price of Apple and any recent news related to the company....
+2025-11-07 17:27:14,456 [INFO]   Running TRADITIONAL approach...
+2025-11-07 17:27:14,456 [INFO] [TRADITIONAL] Processing: Please provide me with the current stock price of Apple and any recent news related to the company.
+2025-11-07 17:27:14,457 [INFO] [TRADITIONAL] Sending 101 function schemas to LLM
+2025-11-07 17:27:16,461 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:27:16,478 [INFO] [TRADITIONAL] LLM Call 1: 14565 prompt tokens (includes ALL 101 function schemas!)
+2025-11-07 17:27:16,478 [INFO] [TRADITIONAL] LLM called: use_stockdata({'action': 'get_info', 'symbol': 'AAPL'})
+2025-11-07 17:27:16,478 [INFO]   ✓ Traditional: 14586 tokens, 2022ms, 1 LLM calls
+2025-11-07 17:27:16,478 [INFO]   Running CODE MODE approach...
+2025-11-07 17:27:16,478 [INFO] [CODE MODE] Processing: Please provide me with the current stock price of Apple and any recent news related to the company.
+2025-11-07 17:27:36,192 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 17:27:36,265 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 17:27:36,426 [INFO] [PROXY] Search request: query='Apple stock price', limit=5
+2025-11-07 17:27:36,427 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:27:36,431 [INFO] [PROXY] Search request: query='Apple news', limit=5
+2025-11-07 17:27:36,431 [INFO] [PROXY] Search found 5 results
+2025-11-07 17:27:36,437 [INFO] ✓ Execution successful (173ms)
+2025-11-07 17:27:36,437 [INFO]   ✓ Code Mode: 722 tokens, 19959ms, 1 LLM calls
+2025-11-07 17:27:36,437 [INFO]   📊 Token reduction so far: 94.7%
+2025-11-07 17:27:36,437 [INFO] 
+================================================================================
+2025-11-07 17:27:36,437 [INFO] TASK SUMMARY: Task2-Subtask4 (Complex Tool Reasoning)
+2025-11-07 17:27:36,437 [INFO] ================================================================================
+2025-11-07 17:27:36,437 [INFO] Queries processed: 2/2
+2025-11-07 17:27:36,437 [INFO] 
+Traditional Approach:
+2025-11-07 17:27:36,437 [INFO]   Tokens: 29,166 (prompt: 29,129, completion: 37)
+2025-11-07 17:27:36,437 [INFO]   Time: 3965ms (avg: 1982ms/query)
+2025-11-07 17:27:36,437 [INFO]   LLM calls: 2
+2025-11-07 17:27:36,437 [INFO]   Cost: $0.2924
+2025-11-07 17:27:36,437 [INFO] 
+Code Mode Approach:
+2025-11-07 17:27:36,437 [INFO]   Tokens: 1,545 (prompt: 1,077, completion: 468)
+2025-11-07 17:27:36,437 [INFO]   Time: 34046ms (avg: 17023ms/query)
+2025-11-07 17:27:36,437 [INFO]   LLM calls: 2
+2025-11-07 17:27:36,438 [INFO]   Cost: $0.0248
+2025-11-07 17:27:36,438 [INFO] 
+🎯 IMPROVEMENTS:
+2025-11-07 17:27:36,438 [INFO]   Token reduction: 94.7%
+2025-11-07 17:27:36,438 [INFO]   Time reduction: -758.7%
+2025-11-07 17:27:36,438 [INFO]   LLM call reduction: 0.0%
+2025-11-07 17:27:36,438 [INFO]   Cost savings: 91.5% ($0.2676)
+2025-11-07 17:27:36,438 [INFO] ================================================================================
+
+2025-11-07 17:27:36,438 [INFO] 
+################################################################################
+2025-11-07 17:27:36,438 [INFO] OVERALL BENCHMARK SUMMARY
+2025-11-07 17:27:36,438 [INFO] ################################################################################
+2025-11-07 17:27:36,438 [INFO] Total queries processed: 10
+2025-11-07 17:27:36,438 [INFO] Number of tools: 100
+2025-11-07 17:27:36,438 [INFO] 
+Traditional Approach (TOTAL):
+2025-11-07 17:27:36,438 [INFO]   Tokens: 147,015 (prompt: 145,659, completion: 1,356)
+2025-11-07 17:27:36,438 [INFO]   Time: 59071ms (59.1s)
+2025-11-07 17:27:36,438 [INFO]   LLM calls: 10
+2025-11-07 17:27:36,438 [INFO]   Cost: $1.50
+2025-11-07 17:27:36,438 [INFO] 
+Code Mode Approach (TOTAL):
+2025-11-07 17:27:36,438 [INFO]   Tokens: 7,340 (prompt: 5,399, completion: 1,941)
+2025-11-07 17:27:36,438 [INFO]   Time: 93686ms (93.7s)
+2025-11-07 17:27:36,438 [INFO]   LLM calls: 10
+2025-11-07 17:27:36,438 [INFO]   Cost: $0.11
+2025-11-07 17:27:36,438 [INFO] 
+🎯 OVERALL IMPROVEMENTS:
+2025-11-07 17:27:36,438 [INFO]   Token reduction: 95.0%
+2025-11-07 17:27:36,438 [INFO]   Time reduction: -58.6%
+2025-11-07 17:27:36,438 [INFO]   LLM call reduction: 0.0%
+2025-11-07 17:27:36,438 [INFO]   Cost savings: 92.5% ($1.39)
+2025-11-07 17:27:36,438 [INFO] ################################################################################
+
+2025-11-07 17:27:36,439 [INFO] Results saved to: /Users/anvayvats/modas/MetaTool/src/gateway_mvp/results/full_benchmark/full_benchmark_100tools_20251107_172736.json
+2025-11-07 17:27:36,440 [INFO] 
+✅ Benchmark completed successfully!
+2025-11-07 17:27:36,440 [INFO] 📊 Results saved to: /Users/anvayvats/modas/MetaTool/src/gateway_mvp/results/full_benchmark/full_benchmark_100tools_20251107_172736.json

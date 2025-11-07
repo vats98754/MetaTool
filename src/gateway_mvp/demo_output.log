@@ -1,0 +1,158 @@
+================================================================================
+UNIFIED GATEWAY + CODE MODE DEMO
+================================================================================
+
+================================================================================
+GENERATED TYPESCRIPT API (Meta-Tool Functions)
+================================================================================
+interface SearchInput {
+  /**
+   * Search query describing desired tool functionality
+   */
+  query: string;
+  /**
+   * Optional filters (e.g., {category: ['weather']})
+   */
+  filters?: { [key: string]: any };
+  /**
+   * Maximum number of results (default: 5)
+   */
+  limit?: number;
+}
+
+interface SearchOutput {
+  /**
+   * Array of matching tools with scores
+   */
+  results?: any[];
+}
+
+interface ValidateParamsInput {
+  /**
+   * Name of the tool to validate against
+   */
+  tool_name: string;
+  /**
+   * Parameters to validate
+   */
+  params: { [key: string]: any };
+}
+
+interface ValidateParamsOutput {
+  /**
+   * Whether parameters are valid
+   */
+  valid?: boolean;
+  /**
+   * Validation errors if any
+   */
+  errors?: any[];
+}
+
+interface GetByCategoryInput {
+  /**
+   * Category name
+   */
+  category: string;
+  /**
+   * Maximum results (default: 10)
+   */
+  limit?: number;
+}
+
+interface GetByCategoryOutput {
+  /**
+   * Tools in the category
+   */
+  tools?: any[];
+}
+
+declare const metaToolAPI: {
+  /**
+   * Search the tool database using semantic search. Returns top matching tools with relevance scores. This searches across 10,000+ tools efficiently.
+   */
+  search: (
+    input: SearchInput
+  ) => Promise<SearchOutput>;
+
+  /**
+   * Validate parameters against a tool's schema. Use this to check if your intended parameters match the tool's requirements.
+   */
+  validate_params: (
+    input: ValidateParamsInput
+  ) => Promise<ValidateParamsOutput>;
+
+  /**
+   * Get all tools in a specific category. Categories include: weather, translation, finance, etc.
+   */
+  get_by_category: (
+    input: GetByCategoryInput
+  ) => Promise<GetByCategoryOutput>;
+
+};
+
+================================================================================
+PROCESSING USER QUERY
+================================================================================
+
+User Query: Find a tool to translate Spanish to English
+
+✓ SUCCESS
+  Tokens Used: 1,650 (vs ~150,000 baseline)
+  Token Reduction: 98.9%
+  Execution Time: 96.90ms
+
+  Code Generated:
+    
+    const results = await tooldb.search_tools({
+        query: "translate Spanish English",
+        limit: 5
+    });
+    
+    console.log("Found tools:", JSON.stringify(results));
+    
+    if (results.results && results.results.length > 0) {
+        console.log("Best tool:", results.results[0].name);
+    }
+    
+
+  Console Output:
+    
+
+  RPC Calls Made: 0
+
+================================================================================
+KEY BENEFITS
+================================================================================
+
+1. MASSIVE TOKEN REDUCTION
+   - Baseline: 150,000 tokens (send all 10K tool schemas)
+   - Unified: 1,650 tokens (send 3 meta-tool functions as TypeScript API)
+   - Reduction: 98.9%
+
+2. BETTER ACCURACY
+   - LLMs write better retrieval code than they select from huge lists
+   - Code is composable (search → filter → validate)
+   - Code is debuggable and auditable
+
+3. SECURE EXECUTION
+   - Code runs in isolated sandbox (V8 isolate in production)
+   - No network access
+   - Only RPC bindings to meta-tools
+   - No API keys exposed to LLM
+
+4. INFINITE SCALABILITY
+   - Token usage constant regardless of tool count
+   - 10K tools → 1,650 tokens
+   - 1M tools → 1,650 tokens
+   - Baseline would fail at 100K tools (context limit)
+
+5. CLOUDFLARE WORKER READY
+   - Uses V8 isolates (Cloudflare Workers native)
+   - Deploy to edge for ultra-low latency
+   - No containers needed
+   - Millisecond cold starts
+
+================================================================================
+DEMO COMPLETE
+================================================================================

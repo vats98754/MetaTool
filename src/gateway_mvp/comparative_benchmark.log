@@ -1,0 +1,28 @@
+2025-11-07 16:57:52,232 [INFO] Loading MetaTool database from: /Users/anvayvats/modas/MetaTool/dataset/big_tool_des.json
+2025-11-07 16:57:52,232 [INFO] ✓ Loaded 47 tools
+2025-11-07 16:57:52,295 [INFO] MetaTool proxy started on http://localhost:3002
+2025-11-07 16:57:52,463 [INFO] Deno runtime detected
+2025-11-07 16:57:52,464 [INFO] [TRADITIONAL] Processing: Find a tool to translate Spanish to English
+2025-11-07 16:57:54,676 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:57:54,689 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'Spanish to English translation tool'})
+2025-11-07 16:58:00,155 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:00,165 [INFO] [TRADITIONAL] Final response: I'm sorry, but I couldn't find a precise tool that translates Spanish to English language in our too...
+2025-11-07 16:58:01,170 [INFO] [CODE MODE] Processing: Find a tool to translate Spanish to English
+2025-11-07 16:58:08,787 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:08,800 [ERROR] [CODE MODE] Error: too many values to unpack (expected 2)
+2025-11-07 16:58:09,803 [INFO] [TRADITIONAL] Processing: I need a weather forecasting service
+2025-11-07 16:58:11,257 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:11,257 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'weather forecasting service'})
+2025-11-07 16:58:12,795 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:12,798 [INFO] [TRADITIONAL] Final response: The tool that can help you with weather forecasting is the "WeatherTool". It provides you with the l...
+2025-11-07 16:58:13,804 [INFO] [CODE MODE] Processing: I need a weather forecasting service
+2025-11-07 16:58:18,835 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:18,837 [ERROR] [CODE MODE] Error: too many values to unpack (expected 2)
+2025-11-07 16:58:19,839 [INFO] [TRADITIONAL] Processing: Search for image generation tools
+2025-11-07 16:58:21,858 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:21,865 [INFO] [TRADITIONAL] LLM called: search_tools({'query': 'image generation'})
+2025-11-07 16:58:28,198 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:58:28,205 [INFO] [TRADITIONAL] Final response: Here are some image generation tools I found in the database:
+
+1. [MapTool](#): An innovative tool t...
+2025-11-07 16:58:29,211 [INFO] [CODE MODE] Processing: Search for image generation tools

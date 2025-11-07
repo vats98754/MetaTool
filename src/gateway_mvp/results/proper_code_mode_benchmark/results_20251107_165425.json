@@ -1,0 +1,84 @@
+{
+  "timestamp": "20251107_165425",
+  "total_queries": 5,
+  "successful": 5,
+  "avg_time_ms": 5033.748197555542,
+  "total_time_ms": 25168.74098777771,
+  "queries": [
+    {
+      "query": "Find a tool to translate Spanish to English",
+      "success": true,
+      "output": "{\"name\":\"FinanceTool\",\"description\":\"Stay informed with the latest financial updates, real-time insights, and analysis on a wide range of options, stocks, cryptocurrencies, and more.\",\"category\":\"general\",\"score\":0.1}\n",
+      "error": null,
+      "code": "async function findTranslationTool() {\n  try {\n    const searchInput: SearchInput = {\n      query: \"translate Spanish to English\",\n      limit: 1\n    };\n\n    const searchOutput = await searchTools(searchInput);\n\n    if (searchOutput.results.length > 0) {\n      const tool = searchOutput.results[0];\n      const validateInput: ValidateInput = {\n        tool_name: tool.name,\n        params: {}\n      };\n\n      const validateOutput = await validateParams(validateInput);\n\n      if (validateOutput.valid) {\n        console.log(JSON.stringify(tool));\n      } else {\n        console.log(JSON.stringify({ error: \"Tool parameters are not valid\", errors: validateOutput.errors }));\n      }\n    } else {\n      console.log(JSON.stringify({ error: \"No tools found for the given query\" }));\n    }\n  } catch (error) {\n    console.log(JSON.stringify({ error: \"An error occurred while searching for tools\", details: error }));\n  }\n}\n\nfindTranslationTool();",
+      "execution_time_ms": 150.21991729736328,
+      "total_time_ms": 5211.380958557129,
+      "test_case": {
+        "query": "Find a tool to translate Spanish to English",
+        "expected_category": "translation",
+        "description": "Simple translation tool search"
+      },
+      "query_number": 1
+    },
+    {
+      "query": "I need a weather forecasting service",
+      "success": true,
+      "output": "{\"name\":\"WeatherTool\",\"description\":\"Provide you with the latest weather information.\",\"category\":\"general\",\"score\":0.1}\n",
+      "error": null,
+      "code": "async function getWeatherForecastingService() {\n  try {\n    const searchInput: SearchInput = {\n      query: \"weather forecasting\",\n      limit: 1\n    };\n\n    const searchOutput = await searchTools(searchInput);\n\n    if (searchOutput.results.length === 0) {\n      console.log(JSON.stringify({ error: \"No weather forecasting service found\" }));\n      return;\n    }\n\n    const tool = searchOutput.results[0];\n    const validateInput: ValidateInput = {\n      tool_name: tool.name,\n      params: {}\n    };\n\n    const validateOutput = await validateParams(validateInput);\n\n    if (!validateOutput.valid) {\n      console.log(JSON.stringify({ error: \"Invalid tool parameters\", errors: validateOutput.errors }));\n      return;\n    }\n\n    console.log(JSON.stringify(tool));\n  } catch (error) {\n    console.log(JSON.stringify({ error: error.message }));\n  }\n}\n\ngetWeatherForecastingService();",
+      "execution_time_ms": 61.036109924316406,
+      "total_time_ms": 5657.357931137085,
+      "test_case": {
+        "query": "I need a weather forecasting service",
+        "expected_category": "weather",
+        "description": "Weather API search"
+      },
+      "query_number": 2
+    },
+    {
+      "query": "Search for image generation tools",
+      "success": true,
+      "output": "{\"results\":[{\"name\":\"MapTool\",\"description\":\"Experience the next level of map navigation with our innovative chatbot, leveraging Google Maps API to generate customized map images based on location, tilt, and style, and even annotate maps using latitude and longitude coordinates.\",\"category\":\"general\",\"score\":0.1},{\"name\":\"NASATool\",\"description\":\"A platform for exploring space, allowing users to search and discover NASA images and utilize NASA's vast media library.\",\"category\":\"general\",\"score\":0.1},{\"name\":\"MediaModifyTool\",\"description\":\"A versatile image editing application with a vast selection of user-generated filters, allowing you to effortlessly edit photos and videos. It includes embedded features such as resizing, cropping, and blurring.\",\"category\":\"general\",\"score\":0.1},{\"name\":\"TripTool\",\"description\":\"Offer discounted hotel and accommodation bookings, along with personalized hotel and product searches, travel planning, image editing, and more, helping users easily plan their trips and find accommodation and transportation options.\",\"category\":\"general\",\"score\":0.1}]}\n",
+      "error": null,
+      "code": "const searchQuery: SearchInput = {\n  query: \"image generation tools\",\n};\n\nsearchTools(searchQuery)\n  .then((output: SearchOutput) => {\n    console.log(JSON.stringify(output));\n  })\n  .catch((error: Error) => {\n    console.error(`Error occurred while searching tools: ${error.message}`);\n  });",
+      "execution_time_ms": 49.63803291320801,
+      "total_time_ms": 2403.05495262146,
+      "test_case": {
+        "query": "Search for image generation tools",
+        "expected_category": "image",
+        "description": "Image generation search"
+      },
+      "query_number": 3
+    },
+    {
+      "query": "Find tools for sentiment analysis",
+      "success": true,
+      "output": "[{\"name\":\"FinanceTool\",\"description\":\"Stay informed with the latest financial updates, real-time insights, and analysis on a wide range of options, stocks, cryptocurrencies, and more.\",\"category\":\"general\",\"score\":0.1},{\"name\":\"PDF&URLTool\",\"description\":\"Interact with any PDF files, provide page references for fact-checking, support chatting via Google Drive links to AI-driven PDF summaries and analysis; engage in interactive conversations with websites, access links on the internet to fetch required information, including generating articles and intelligent assistance for interactions with source code.\",\"category\":\"general\",\"score\":0.1},{\"name\":\"Review\",\"description\":\"Analyze and summarize reviews, providing advantages and disadvantages analysis of products.\",\"category\":\"general\",\"score\":0.1}]\n",
+      "error": null,
+      "code": "const searchQuery: SearchInput = {\n  query: \"sentiment analysis\",\n};\n\nsearchTools(searchQuery)\n  .then((output: SearchOutput) => {\n    console.log(JSON.stringify(output.results));\n  })\n  .catch((error: Error) => {\n    console.error(`Error occurred while searching tools: ${error.message}`);\n  });",
+      "execution_time_ms": 61.351776123046875,
+      "total_time_ms": 2186.4452362060547,
+      "test_case": {
+        "query": "Find tools for sentiment analysis",
+        "expected_category": "nlp",
+        "description": "NLP/sentiment analysis search"
+      },
+      "query_number": 4
+    },
+    {
+      "query": "I want to convert currencies",
+      "success": true,
+      "output": "Error in currency conversion. Unknown endpoint\n",
+      "error": null,
+      "code": "async function convertCurrencies(fromCurrency: string, toCurrency: string, amount: number): Promise<void> {\n  try {\n    const searchInput: SearchInput = {\n      query: 'currency converter',\n    };\n\n    const searchOutput = await searchTools(searchInput);\n\n    if (searchOutput.results.length === 0) {\n      console.log('No currency converter tool found.');\n      return;\n    }\n\n    const toolName = searchOutput.results[0].name;\n\n    const validateInput: ValidateInput = {\n      tool_name: toolName,\n      params: {\n        from: fromCurrency,\n        to: toCurrency,\n        amount: amount,\n      },\n    };\n\n    const validateOutput = await validateParams(validateInput);\n\n    if (!validateOutput.valid) {\n      console.log('Invalid parameters for currency conversion.', validateOutput.errors);\n      return;\n    }\n\n    const response = await fetch(`${METATOOL_API}/run_tool`, {\n      method: \"POST\",\n      headers: { \"Content-Type\": \"application/json\" },\n      body: JSON.stringify({\n        tool_name: toolName,\n        params: validateInput.params,\n      }),\n    });\n\n    const result = await response.json();\n\n    if (result.error) {\n      console.log('Error in currency conversion.', result.error);\n      return;\n    }\n\n    console.log(JSON.stringify(result.data));\n  } catch (error) {\n    console.log('Error in currency conversion.', error);\n  }\n}\n\nconvertCurrencies('USD', 'EUR', 100);",
+      "execution_time_ms": 201.96080207824707,
+      "total_time_ms": 9710.501909255981,
+      "test_case": {
+        "query": "I want to convert currencies",
+        "expected_category": "finance",
+        "description": "Currency conversion search"
+      },
+      "query_number": 5
+    }
+  ]
+}

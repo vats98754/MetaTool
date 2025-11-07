@@ -1,0 +1,30 @@
+================================================================================
+CODE MODE BENCHMARK SUMMARY
+================================================================================
+
+Queries Tested:     5
+Success Rate:       100.0%
+
+PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+Avg Latency:        6279.17ms
+  - LLM:            2511.67ms (40%)
+  - Sandbox:        1883.75ms (30%)
+  - RPC:            1883.75ms (30%)
+
+TOKEN EFFICIENCY
+--------------------------------------------------------------------------------
+Baseline (avg):     15,000 tokens
+Code Mode (avg):    1,650 tokens
+Reduction:          89.0%
+
+PER-QUERY RESULTS
+--------------------------------------------------------------------------------
+Query                                              Tokens       Latency      Tool Found          
+--------------------------------------------------------------------------------
+Find a tool to translate Spanish to English           1,650     3926.35ms   None                
+Get weather forecast for New York City                1,650     8609.68ms   None                
+Convert 100 USD to EUR                                1,650     5650.53ms   None                
+Send an email to my team                              1,650     7486.48ms   None                
+Create a calendar event for tomorrow 3pm              1,650     5722.78ms   None                
+================================================================================

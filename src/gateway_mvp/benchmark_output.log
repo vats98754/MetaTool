@@ -1,0 +1,168 @@
+2025-11-07 16:53:54,784 [INFO] Loading MetaTool database from: /Users/anvayvats/modas/MetaTool/dataset/big_tool_des.json
+2025-11-07 16:53:54,784 [INFO] ✓ Loaded 47 tools
+2025-11-07 16:53:54,807 [INFO] MetaTool proxy started on http://localhost:3001
+2025-11-07 16:53:54,974 [INFO] Deno runtime detected
+2025-11-07 16:53:54,974 [INFO] 
+================================================================================
+2025-11-07 16:53:54,974 [INFO] CODE MODE QUERY: Find a tool to translate Spanish to English
+2025-11-07 16:53:54,974 [INFO] ================================================================================
+
+2025-11-07 16:53:54,974 [INFO] → Calling LLM to generate TypeScript...
+2025-11-07 16:54:00,014 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:54:00,035 [INFO] → LLM generated 941 chars of code
+2025-11-07 16:54:00,035 [INFO] → Executing in Deno sandbox...
+2025-11-07 16:54:00,036 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 16:54:00,177 [INFO] [PROXY] Search request: query='translate Spanish to English', limit=1
+2025-11-07 16:54:00,178 [INFO] [PROXY] Search found 1 results
+2025-11-07 16:54:00,185 [INFO] ✓ Execution successful (150ms)
+2025-11-07 16:54:00,185 [INFO] 
+================================================================================
+2025-11-07 16:54:00,185 [INFO] COMPLETE: 5211ms total
+2025-11-07 16:54:00,185 [INFO] ================================================================================
+
+2025-11-07 16:54:01,187 [INFO] 
+================================================================================
+2025-11-07 16:54:01,187 [INFO] CODE MODE QUERY: I need a weather forecasting service
+2025-11-07 16:54:01,187 [INFO] ================================================================================
+
+2025-11-07 16:54:01,187 [INFO] → Calling LLM to generate TypeScript...
+2025-11-07 16:54:06,779 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:54:06,783 [INFO] → LLM generated 881 chars of code
+2025-11-07 16:54:06,783 [INFO] → Executing in Deno sandbox...
+2025-11-07 16:54:06,784 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 16:54:06,840 [INFO] [PROXY] Search request: query='weather forecasting', limit=1
+2025-11-07 16:54:06,840 [INFO] [PROXY] Search found 1 results
+2025-11-07 16:54:06,844 [INFO] ✓ Execution successful (61ms)
+2025-11-07 16:54:06,844 [INFO] 
+================================================================================
+2025-11-07 16:54:06,844 [INFO] COMPLETE: 5657ms total
+2025-11-07 16:54:06,844 [INFO] ================================================================================
+
+2025-11-07 16:54:07,849 [INFO] 
+================================================================================
+2025-11-07 16:54:07,849 [INFO] CODE MODE QUERY: Search for image generation tools
+2025-11-07 16:54:07,849 [INFO] ================================================================================
+
+2025-11-07 16:54:07,849 [INFO] → Calling LLM to generate TypeScript...
+2025-11-07 16:54:10,198 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:54:10,203 [INFO] → LLM generated 292 chars of code
+2025-11-07 16:54:10,203 [INFO] → Executing in Deno sandbox...
+2025-11-07 16:54:10,204 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 16:54:10,249 [INFO] [PROXY] Search request: query='image generation tools', limit=5
+2025-11-07 16:54:10,249 [INFO] [PROXY] Search found 4 results
+2025-11-07 16:54:10,252 [INFO] ✓ Execution successful (50ms)
+2025-11-07 16:54:10,252 [INFO] 
+================================================================================
+2025-11-07 16:54:10,252 [INFO] COMPLETE: 2403ms total
+2025-11-07 16:54:10,253 [INFO] ================================================================================
+
+2025-11-07 16:54:11,258 [INFO] 
+================================================================================
+2025-11-07 16:54:11,258 [INFO] CODE MODE QUERY: Find tools for sentiment analysis
+2025-11-07 16:54:11,258 [INFO] ================================================================================
+
+2025-11-07 16:54:11,258 [INFO] → Calling LLM to generate TypeScript...
+2025-11-07 16:54:13,380 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:54:13,383 [INFO] → LLM generated 296 chars of code
+2025-11-07 16:54:13,383 [INFO] → Executing in Deno sandbox...
+2025-11-07 16:54:13,384 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 16:54:13,438 [INFO] [PROXY] Search request: query='sentiment analysis', limit=5
+2025-11-07 16:54:13,439 [INFO] [PROXY] Search found 3 results
+2025-11-07 16:54:13,444 [INFO] ✓ Execution successful (61ms)
+2025-11-07 16:54:13,445 [INFO] 
+================================================================================
+2025-11-07 16:54:13,445 [INFO] COMPLETE: 2186ms total
+2025-11-07 16:54:13,445 [INFO] ================================================================================
+
+2025-11-07 16:54:14,450 [INFO] 
+================================================================================
+2025-11-07 16:54:14,450 [INFO] CODE MODE QUERY: I want to convert currencies
+2025-11-07 16:54:14,450 [INFO] ================================================================================
+
+2025-11-07 16:54:14,450 [INFO] → Calling LLM to generate TypeScript...
+2025-11-07 16:54:23,943 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-07 16:54:23,958 [INFO] → LLM generated 1393 chars of code
+2025-11-07 16:54:23,958 [INFO] → Executing in Deno sandbox...
+2025-11-07 16:54:23,959 [INFO] Executing TypeScript in Deno (timeout: 10s)
+2025-11-07 16:54:24,152 [INFO] [PROXY] Search request: query='currency converter', limit=5
+2025-11-07 16:54:24,152 [INFO] [PROXY] Search found 1 results
+2025-11-07 16:54:24,161 [INFO] ✓ Execution successful (202ms)
+2025-11-07 16:54:24,161 [INFO] 
+================================================================================
+2025-11-07 16:54:24,161 [INFO] COMPLETE: 9711ms total
+2025-11-07 16:54:24,161 [INFO] ================================================================================
+
+2025-11-07 16:54:25,660 [INFO] MetaTool proxy stopped
+
+================================================================================
+PROPER CODE MODE BENCHMARK (Deno + OpenAI)
+================================================================================
+
+→ Loading MetaTool database...
+
+→ Initializing OpenAI GPT-4...
+✓ OpenAI client ready
+
+→ Creating Code Mode agent...
+✓ Agent ready with Deno runtime
+
+================================================================================
+RUNNING 5 QUERIES
+================================================================================
+
+
+================================================================================
+Query 1/5: Find a tool to translate Spanish to English
+================================================================================
+
+→ Success: True
+→ Time: 5211ms
+→ Found 0 tools
+
+================================================================================
+Query 2/5: I need a weather forecasting service
+================================================================================
+
+→ Success: True
+→ Time: 5657ms
+→ Found 0 tools
+
+================================================================================
+Query 3/5: Search for image generation tools
+================================================================================
+
+→ Success: True
+→ Time: 2403ms
+→ Found 4 tools
+
+================================================================================
+Query 4/5: Find tools for sentiment analysis
+================================================================================
+
+→ Success: True
+→ Time: 2186ms
+→ Output: [{"name":"FinanceTool","description":"Stay informed with the latest financial updates, real-time ins...
+
+================================================================================
+Query 5/5: I want to convert currencies
+================================================================================
+
+→ Success: True
+→ Time: 9711ms
+→ Output: Error in currency conversion. Unknown endpoint
+...
+
+================================================================================
+BENCHMARK RESULTS
+================================================================================
+
+Success Rate: 5/5 (100.0%)
+Average Time: 5034ms
+Total Time: 25169ms
+
+✓ Detailed results saved to: /Users/anvayvats/modas/MetaTool/src/gateway_mvp/results/proper_code_mode_benchmark/results_20251107_165425.json
+✓ Summary saved to: /Users/anvayvats/modas/MetaTool/src/gateway_mvp/results/proper_code_mode_benchmark/summary.txt
+
+================================================================================
+BENCHMARK COMPLETE
+================================================================================

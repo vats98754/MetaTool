@@ -1,0 +1,144 @@
+{
+  "timestamp": "20251107_171907",
+  "summary": {
+    "traditional": {
+      "avg_tokens": 15810.2,
+      "avg_latency_ms": 11679.753494262695,
+      "success_rate": 100.0,
+      "avg_llm_calls": 1.8
+    },
+    "code_mode": {
+      "avg_tokens": 697.0,
+      "avg_latency_ms": 5723.02885055542,
+      "success_rate": 100.0,
+      "avg_llm_calls": 1.0
+    },
+    "improvements": {
+      "token_reduction_pct": 95.59145361855005,
+      "latency_reduction_pct": 51.000431187467484,
+      "llm_call_reduction": 0.8
+    }
+  },
+  "detailed_results": [
+    {
+      "query": "Find a tool to translate Spanish to English",
+      "approach": "traditional",
+      "success": true,
+      "latency_ms": 10320.183992385864,
+      "prompt_tokens": 15390,
+      "completion_tokens": 222,
+      "total_tokens": 15612,
+      "tools_found": 5,
+      "num_llm_calls": 2,
+      "error": null
+    },
+    {
+      "query": "Find a tool to translate Spanish to English",
+      "approach": "code_mode",
+      "success": true,
+      "latency_ms": 7055.379152297974,
+      "prompt_tokens": 529,
+      "completion_tokens": 221,
+      "total_tokens": 750,
+      "tools_found": 0,
+      "num_llm_calls": 1,
+      "error": null
+    },
+    {
+      "query": "I need a weather forecasting service",
+      "approach": "traditional",
+      "success": true,
+      "latency_ms": 9638.28420639038,
+      "prompt_tokens": 14673,
+      "completion_tokens": 183,
+      "total_tokens": 14856,
+      "tools_found": 1,
+      "num_llm_calls": 2,
+      "error": null
+    },
+    {
+      "query": "I need a weather forecasting service",
+      "approach": "code_mode",
+      "success": true,
+      "latency_ms": 7003.987789154053,
+      "prompt_tokens": 527,
+      "completion_tokens": 200,
+      "total_tokens": 727,
+      "tools_found": 0,
+      "num_llm_calls": 1,
+      "error": null
+    },
+    {
+      "query": "Search for image generation tools",
+      "approach": "traditional",
+      "success": true,
+      "latency_ms": 9662.93716430664,
+      "prompt_tokens": 17447,
+      "completion_tokens": 287,
+      "total_tokens": 17734,
+      "tools_found": 5,
+      "num_llm_calls": 2,
+      "error": null
+    },
+    {
+      "query": "Search for image generation tools",
+      "approach": "code_mode",
+      "success": true,
+      "latency_ms": 3563.490152359009,
+      "prompt_tokens": 526,
+      "completion_tokens": 74,
+      "total_tokens": 600,
+      "tools_found": 0,
+      "num_llm_calls": 1,
+      "error": null
+    },
+    {
+      "query": "Find tools for sentiment analysis",
+      "approach": "traditional",
+      "success": true,
+      "latency_ms": 25329.785108566284,
+      "prompt_tokens": 15746,
+      "completion_tokens": 482,
+      "total_tokens": 16228,
+      "tools_found": 5,
+      "num_llm_calls": 2,
+      "error": null
+    },
+    {
+      "query": "Find tools for sentiment analysis",
+      "approach": "code_mode",
+      "success": true,
+      "latency_ms": 2581.862211227417,
+      "prompt_tokens": 526,
+      "completion_tokens": 78,
+      "total_tokens": 604,
+      "tools_found": 0,
+      "num_llm_calls": 1,
+      "error": null
+    },
+    {
+      "query": "I want to convert currencies",
+      "approach": "traditional",
+      "success": true,
+      "latency_ms": 3447.5769996643066,
+      "prompt_tokens": 14551,
+      "completion_tokens": 70,
+      "total_tokens": 14621,
+      "tools_found": 0,
+      "num_llm_calls": 1,
+      "error": null
+    },
+    {
+      "query": "I want to convert currencies",
+      "approach": "code_mode",
+      "success": true,
+      "latency_ms": 8410.424947738647,
+      "prompt_tokens": 526,
+      "completion_tokens": 278,
+      "total_tokens": 804,
+      "tools_found": 0,
+      "num_llm_calls": 1,
+      "error": null
+    }
+  ]
+}
